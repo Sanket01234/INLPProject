@@ -1,3 +1,4 @@
+# aspect_extractor.py (revised)
 import json
 import spacy
 from nltk import ngrams
@@ -9,16 +10,23 @@ class AspectExtractor:
             self.aspect_candidates = json.load(f)
     
     def extract_aspects(self, sentence, domain):
-        """Extract aspects using training data terms and n-gram matching"""
+        """Extract non-overlapping aspects, prioritizing longer n-grams."""
         doc = self.nlp(sentence)
         tokens = [token.text.lower() for token in doc]
         aspects_found = set()
+        covered_indices = set()  # Track indices already part of an aspect
         
-        # Check 1-grams, 2-grams, and 3-grams
-        for n in [1, 2, 3]:
-            for gram in ngrams(tokens, n):
-                candidate = " ".join(gram)
+        # Check n-grams from longest (3-grams) to shortest (1-grams)
+        for n in range(3, 0, -1):
+            for i in range(len(tokens) - n + 1):
+                # Skip if any token in this n-gram is already covered
+                if any(idx in covered_indices for idx in range(i, i + n)):
+                    continue
+                
+                candidate = " ".join(tokens[i:i + n])
                 if candidate in self.aspect_candidates.get(domain, []):
                     aspects_found.add(candidate)
+                    # Mark these indices as covered
+                    covered_indices.update(range(i, i + n))
         
         return list(aspects_found)
