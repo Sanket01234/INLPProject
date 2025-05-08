@@ -1,0 +1,267 @@
+ERROR ANALYSIS REPORT FOR LAPTOP DOMAIN
+======================================================================
+
+SVM - LAPTOP - Prediction Distribution:
+  positive: 438 (54.4%)
+  negative: 363 (45.1%)
+  neutral: 4 (0.5%)
+
+SVM - LAPTOP - Top 10 Aspects:
+  general: 726 instances, dominant sentiment: total
+  price: 21 instances, dominant sentiment: total
+  performance: 17 instances, dominant sentiment: total
+  screen: 16 instances, dominant sentiment: total
+  battery: 14 instances, dominant sentiment: total
+  keyboard: 11 instances, dominant sentiment: total
+
+SVM - LAPTOP - Sentence Length by Sentiment:
++----------+--------+----------+-----------+
+|          |   Mean |   Median |   Std Dev |
++==========+========+==========+===========+
+| negative |   68.8 |     59   |      38.7 |
++----------+--------+----------+-----------+
+| neutral  |  139.8 |    126.5 |      56.3 |
++----------+--------+----------+-----------+
+| positive |   66.1 |     57   |      39   |
++----------+--------+----------+-----------+
+
+SVM - LAPTOP - Distinctive Words by Sentiment:
+
+  NEGATIVE:
+    hardware: count=8, distinctiveness=8.00
+    slot: count=7, distinctiveness=7.00
+    problems: count=11, distinctiveness=5.50
+    switch: count=5, distinctiveness=5.00
+    power: count=5, distinctiveness=5.00
+    see: count=4, distinctiveness=4.00
+    wo: count=4, distinctiveness=4.00
+    sense: count=4, distinctiveness=4.00
+    complaint: count=4, distinctiveness=4.00
+    something: count=8, distinctiveness=4.00
+
+  POSITIVE:
+    great: count=56, distinctiveness=28.00
+    easy: count=22, distinctiveness=22.00
+    nice: count=16, distinctiveness=16.00
+    light: count=11, distinctiveness=11.00
+    use: count=20, distinctiveness=10.00
+    good: count=29, distinctiveness=9.67
+    screen: count=19, distinctiveness=9.50
+    wonderful: count=8, distinctiveness=8.00
+    runs: count=8, distinctiveness=8.00
+    extremely: count=7, distinctiveness=7.00
+
+  NEUTRAL:
+    information: count=2, distinctiveness=2.00
+    heading: count=1, distinctiveness=1.00
+    towards: count=1, distinctiveness=1.00
+    page: count=1, distinctiveness=1.00
+    goals: count=1, distinctiveness=1.00
+    pursue: count=1, distinctiveness=1.00
+    knew: count=1, distinctiveness=1.00
+    adjusted: count=1, distinctiveness=1.00
+    pounding: count=1, distinctiveness=1.00
+    vga: count=1, distinctiveness=1.00
+
+LR - LAPTOP - Prediction Distribution:
+  negative: 376 (46.7%)
+  positive: 369 (45.8%)
+  neutral: 60 (7.5%)
+
+LR - LAPTOP - Top 10 Aspects:
+  general: 726 instances, dominant sentiment: total
+  price: 21 instances, dominant sentiment: total
+  performance: 17 instances, dominant sentiment: total
+  screen: 16 instances, dominant sentiment: total
+  battery: 14 instances, dominant sentiment: total
+  keyboard: 11 instances, dominant sentiment: total
+
+LR - LAPTOP - Sentence Length by Sentiment:
++----------+--------+----------+-----------+
+|          |   Mean |   Median |   Std Dev |
++==========+========+==========+===========+
+| negative |   66   |     57   |      39.8 |
++----------+--------+----------+-----------+
+| neutral  |   83.5 |     78.5 |      41.2 |
++----------+--------+----------+-----------+
+| positive |   66.7 |     58   |      37.9 |
++----------+--------+----------+-----------+
+
+LR - LAPTOP - Distinctive Words by Sentiment:
+
+  NEGATIVE:
+    slot: count=7, distinctiveness=7.00
+    problems: count=11, distinctiveness=5.50
+    know: count=5, distinctiveness=5.00
+    switch: count=5, distinctiveness=5.00
+    power: count=5, distinctiveness=5.00
+    find: count=4, distinctiveness=4.00
+    annoying: count=4, distinctiveness=4.00
+    wo: count=4, distinctiveness=4.00
+    complaint: count=4, distinctiveness=4.00
+    hot: count=4, distinctiveness=4.00
+
+  POSITIVE:
+    easy: count=22, distinctiveness=22.00
+    great: count=54, distinctiveness=13.50
+    wonderful: count=8, distinctiveness=8.00
+    runs: count=8, distinctiveness=8.00
+    nice: count=15, distinctiveness=7.50
+    set: count=7, distinctiveness=7.00
+    laptops: count=7, distinctiveness=7.00
+    fast: count=33, distinctiveness=6.60
+    use: count=19, distinctiveness=6.33
+    powerful: count=6, distinctiveness=6.00
+
+  NEUTRAL:
+    trying: count=2, distinctiveness=2.00
+    saw: count=2, distinctiveness=2.00
+    information: count=2, distinctiveness=2.00
+    iphone: count=2, distinctiveness=2.00
+    ordered: count=2, distinctiveness=2.00
+    year: count=5, distinctiveness=1.67
+    liking: count=1, distinctiveness=1.00
+    dealing: count=1, distinctiveness=1.00
+    course: count=1, distinctiveness=1.00
+    awesomeness: count=1, distinctiveness=1.00
+
+BERT - LAPTOP - Prediction Distribution:
+  positive: 433 (53.8%)
+  negative: 244 (30.3%)
+  neutral: 128 (15.9%)
+
+BERT - LAPTOP - Top 10 Aspects:
+  general: 726 instances, dominant sentiment: total
+  price: 21 instances, dominant sentiment: total
+  performance: 17 instances, dominant sentiment: total
+  screen: 16 instances, dominant sentiment: total
+  battery: 14 instances, dominant sentiment: total
+  keyboard: 11 instances, dominant sentiment: total
+
+BERT - LAPTOP - Sentence Length by Sentiment:
++----------+--------+----------+-----------+
+|          |   Mean |   Median |   Std Dev |
++==========+========+==========+===========+
+| negative |   70.9 |       60 |      39.6 |
++----------+--------+----------+-----------+
+| neutral  |   75.1 |       67 |      39.5 |
++----------+--------+----------+-----------+
+| positive |   63.6 |       54 |      38.5 |
++----------+--------+----------+-----------+
+
+BERT - LAPTOP - Distinctive Words by Sentiment:
+
+  NEUTRAL:
+    decided: count=5, distinctiveness=2.50
+    boot: count=2, distinctiveness=2.00
+    given: count=2, distinctiveness=2.00
+    sony: count=2, distinctiveness=2.00
+    chose: count=2, distinctiveness=2.00
+    information: count=2, distinctiveness=2.00
+    model: count=4, distinctiveness=2.00
+    ordered: count=2, distinctiveness=2.00
+    x: count=2, distinctiveness=2.00
+    half: count=2, distinctiveness=2.00
+
+  NEGATIVE:
+    know: count=5, distinctiveness=5.00
+    power: count=5, distinctiveness=5.00
+    annoying: count=4, distinctiveness=4.00
+    complaint: count=4, distinctiveness=4.00
+    lack: count=4, distinctiveness=4.00
+    volume: count=4, distinctiveness=4.00
+    problem: count=14, distinctiveness=3.50
+    dvd: count=3, distinctiveness=3.00
+    longer: count=3, distinctiveness=3.00
+    slot: count=6, distinctiveness=3.00
+
+  POSITIVE:
+    easy: count=22, distinctiveness=22.00
+    love: count=20, distinctiveness=20.00
+    great: count=54, distinctiveness=13.50
+    amazing: count=12, distinctiveness=12.00
+    fast: count=35, distinctiveness=11.67
+    perfect: count=10, distinctiveness=10.00
+    wonderful: count=8, distinctiveness=8.00
+    quick: count=8, distinctiveness=8.00
+    nice: count=15, distinctiveness=7.50
+    happy: count=14, distinctiveness=7.00
+
+HYBRID - LAPTOP - Prediction Distribution:
+  positive: 463 (57.5%)
+  negative: 249 (30.9%)
+  neutral: 93 (11.6%)
+
+HYBRID - LAPTOP - Top 10 Aspects:
+  general: 726 instances, dominant sentiment: total
+  price: 21 instances, dominant sentiment: total
+  performance: 17 instances, dominant sentiment: total
+  screen: 16 instances, dominant sentiment: total
+  battery: 14 instances, dominant sentiment: total
+  keyboard: 11 instances, dominant sentiment: total
+
+HYBRID - LAPTOP - Sentence Length by Sentiment:
++----------+--------+----------+-----------+
+|          |   Mean |   Median |   Std Dev |
++==========+========+==========+===========+
+| negative |   74.1 |       65 |      40.9 |
++----------+--------+----------+-----------+
+| neutral  |   76.7 |       70 |      38.5 |
++----------+--------+----------+-----------+
+| positive |   62.3 |       52 |      37.7 |
++----------+--------+----------+-----------+
+
+HYBRID - LAPTOP - Distinctive Words by Sentiment:
+
+  POSITIVE:
+    easy: count=22, distinctiveness=22.00
+    love: count=20, distinctiveness=20.00
+    fast: count=36, distinctiveness=18.00
+    nice: count=16, distinctiveness=16.00
+    amazing: count=12, distinctiveness=12.00
+    life: count=11, distinctiveness=11.00
+    great: count=53, distinctiveness=10.60
+    perfect: count=10, distinctiveness=10.00
+    super: count=9, distinctiveness=9.00
+    wonderful: count=8, distinctiveness=8.00
+
+  NEGATIVE:
+    know: count=5, distinctiveness=5.00
+    power: count=5, distinctiveness=5.00
+    annoying: count=4, distinctiveness=4.00
+    complaint: count=4, distinctiveness=4.00
+    retina: count=4, distinctiveness=4.00
+    lack: count=4, distinctiveness=4.00
+    seem: count=4, distinctiveness=4.00
+    board: count=4, distinctiveness=4.00
+    volume: count=4, distinctiveness=4.00
+    slow: count=7, distinctiveness=3.50
+
+  NEUTRAL:
+    spend: count=3, distinctiveness=3.00
+    bestbuy: count=2, distinctiveness=2.00
+    side: count=2, distinctiveness=2.00
+    chose: count=2, distinctiveness=2.00
+    son: count=2, distinctiveness=2.00
+    information: count=2, distinctiveness=2.00
+    toshiba: count=2, distinctiveness=2.00
+    x: count=2, distinctiveness=2.00
+    going: count=5, distinctiveness=1.67
+    different: count=5, distinctiveness=1.67
+
+Analyzing confusion patterns for LAPTOP domain:
+
+Common disagreement patterns:
+  bert: positive vs hybrid: positive vs lr: negative vs svm: negative: 81 instances
+  bert: neutral vs hybrid: neutral vs lr: negative vs svm: negative: 34 instances
+  bert: positive vs hybrid: positive vs lr: negative vs svm: positive: 32 instances
+  bert: negative vs hybrid: negative vs lr: positive vs svm: positive: 32 instances
+  bert: negative vs hybrid: negative vs lr: negative vs svm: positive: 22 instances
+
+Top aspects with model disagreements:
+  general: 363 instances
+  performance: 9 instances
+  screen: 7 instances
+  price: 7 instances
+  battery: 2 instances
+  keyboard: 1 instances

@@ -1,0 +1,266 @@
+ERROR ANALYSIS REPORT FOR RESTAURANT DOMAIN
+======================================================================
+
+SVM - RESTAURANT - Prediction Distribution:
+  positive: 770 (91.4%)
+  negative: 60 (7.1%)
+  neutral: 12 (1.4%)
+
+SVM - RESTAURANT - Top 10 Aspects:
+  general: 572 instances, dominant sentiment: total
+  food: 148 instances, dominant sentiment: total
+  service: 78 instances, dominant sentiment: total
+  menu: 30 instances, dominant sentiment: total
+  price: 11 instances, dominant sentiment: total
+  ambience: 3 instances, dominant sentiment: positive
+
+SVM - RESTAURANT - Sentence Length by Sentiment:
++----------+--------+----------+-----------+
+|          |   Mean |   Median |   Std Dev |
++==========+========+==========+===========+
+| negative |  102.6 |     86.5 |      58.2 |
++----------+--------+----------+-----------+
+| neutral  |  120.1 |    110.5 |      57.3 |
++----------+--------+----------+-----------+
+| positive |   73.3 |     65   |      36.9 |
++----------+--------+----------+-----------+
+
+SVM - RESTAURANT - Distinctive Words by Sentiment:
+
+  POSITIVE:
+    great: count=102, distinctiveness=51.00
+    good: count=88, distinctiveness=44.00
+    nice: count=30, distinctiveness=30.00
+    fresh: count=29, distinctiveness=29.00
+    atmosphere: count=26, distinctiveness=26.00
+    delicious: count=25, distinctiveness=25.00
+    sushi: count=23, distinctiveness=23.00
+    also: count=23, distinctiveness=23.00
+    well: count=20, distinctiveness=20.00
+    definitely: count=19, distinctiveness=19.00
+
+  NEGATIVE:
+    meals: count=3, distinctiveness=3.00
+    absolute: count=2, distinctiveness=2.00
+    annoyed: count=2, distinctiveness=2.00
+    company: count=2, distinctiveness=2.00
+    peg: count=2, distinctiveness=2.00
+    rowdy: count=2, distinctiveness=2.00
+    commuters: count=2, distinctiveness=2.00
+    explain: count=2, distinctiveness=2.00
+    attitudes: count=2, distinctiveness=2.00
+    loaded: count=2, distinctiveness=2.00
+
+  NEUTRAL:
+    cod: count=2, distinctiveness=2.00
+    ten: count=1, distinctiveness=1.00
+    rave: count=1, distinctiveness=1.00
+    dog: count=1, distinctiveness=1.00
+    heat: count=1, distinctiveness=1.00
+    problem: count=1, distinctiveness=1.00
+    boot: count=1, distinctiveness=1.00
+    degrees: count=1, distinctiveness=1.00
+    request: count=1, distinctiveness=1.00
+    uncheck: count=1, distinctiveness=1.00
+
+LR - RESTAURANT - Prediction Distribution:
+  positive: 532 (63.2%)
+  negative: 220 (26.1%)
+  neutral: 90 (10.7%)
+
+LR - RESTAURANT - Top 10 Aspects:
+  general: 572 instances, dominant sentiment: total
+  food: 148 instances, dominant sentiment: total
+  service: 78 instances, dominant sentiment: total
+  menu: 30 instances, dominant sentiment: total
+  price: 11 instances, dominant sentiment: total
+  ambience: 3 instances, dominant sentiment: positive
+
+LR - RESTAURANT - Sentence Length by Sentiment:
++----------+--------+----------+-----------+
+|          |   Mean |   Median |   Std Dev |
++==========+========+==========+===========+
+| negative |   80.7 |     70   |      45.1 |
++----------+--------+----------+-----------+
+| neutral  |   85.2 |     80.5 |      41.2 |
++----------+--------+----------+-----------+
+| positive |   72.7 |     64   |      37.3 |
++----------+--------+----------+-----------+
+
+LR - RESTAURANT - Distinctive Words by Sentiment:
+
+  POSITIVE:
+    delicious: count=25, distinctiveness=25.00
+    wonderful: count=16, distinctiveness=16.00
+    great: count=96, distinctiveness=12.00
+    friendly: count=24, distinctiveness=12.00
+    attentive: count=11, distinctiveness=11.00
+    excellent: count=31, distinctiveness=10.33
+    highly: count=10, distinctiveness=10.00
+    always: count=29, distinctiveness=9.67
+    good: count=81, distinctiveness=9.00
+    prompt: count=9, distinctiveness=9.00
+
+  NEGATIVE:
+    bad: count=12, distinctiveness=12.00
+    horrible: count=5, distinctiveness=5.00
+    anyone: count=5, distinctiveness=5.00
+    said: count=5, distinctiveness=5.00
+    getting: count=5, distinctiveness=5.00
+    rude: count=8, distinctiveness=4.00
+    worth: count=12, distinctiveness=4.00
+    manager: count=4, distinctiveness=4.00
+    else: count=4, distinctiveness=4.00
+    awful: count=4, distinctiveness=4.00
+
+  NEUTRAL:
+    brunch: count=4, distinctiveness=4.00
+    talking: count=2, distinctiveness=2.00
+    liking: count=2, distinctiveness=2.00
+    lou: count=2, distinctiveness=2.00
+    occasion: count=2, distinctiveness=2.00
+    worthwhile: count=2, distinctiveness=2.00
+    cod: count=2, distinctiveness=2.00
+    bill: count=3, distinctiveness=1.50
+    chelsea: count=3, distinctiveness=1.50
+    went: count=11, distinctiveness=1.38
+
+BERT - RESTAURANT - Prediction Distribution:
+  positive: 552 (65.6%)
+  negative: 173 (20.5%)
+  neutral: 117 (13.9%)
+
+BERT - RESTAURANT - Top 10 Aspects:
+  general: 572 instances, dominant sentiment: total
+  food: 148 instances, dominant sentiment: total
+  service: 78 instances, dominant sentiment: total
+  menu: 30 instances, dominant sentiment: total
+  price: 11 instances, dominant sentiment: total
+  ambience: 3 instances, dominant sentiment: positive
+
+BERT - RESTAURANT - Sentence Length by Sentiment:
++----------+--------+----------+-----------+
+|          |   Mean |   Median |   Std Dev |
++==========+========+==========+===========+
+| negative |   83.1 |       71 |      46.9 |
++----------+--------+----------+-----------+
+| neutral  |   72.8 |       69 |      31.4 |
++----------+--------+----------+-----------+
+| positive |   74.6 |       65 |      39.3 |
++----------+--------+----------+-----------+
+
+BERT - RESTAURANT - Distinctive Words by Sentiment:
+
+  POSITIVE:
+    excellent: count=33, distinctiveness=33.00
+    great: count=100, distinctiveness=25.00
+    delicious: count=25, distinctiveness=25.00
+    also: count=22, distinctiveness=11.00
+    attentive: count=11, distinctiveness=11.00
+    perfect: count=11, distinctiveness=11.00
+    everything: count=10, distinctiveness=10.00
+    warm: count=10, distinctiveness=10.00
+    prompt: count=9, distinctiveness=9.00
+    outstanding: count=8, distinctiveness=8.00
+
+  NEGATIVE:
+    slow: count=8, distinctiveness=8.00
+    worst: count=7, distinctiveness=7.00
+    horrible: count=5, distinctiveness=5.00
+    rude: count=8, distinctiveness=4.00
+    manager: count=4, distinctiveness=4.00
+    awful: count=4, distinctiveness=4.00
+    fact: count=3, distinctiveness=3.00
+    high: count=3, distinctiveness=3.00
+    crazy: count=3, distinctiveness=3.00
+    chinatown: count=3, distinctiveness=3.00
+
+  NEUTRAL:
+    opened: count=3, distinctiveness=3.00
+    dumont: count=3, distinctiveness=3.00
+    dont: count=2, distinctiveness=2.00
+    call: count=2, distinctiveness=2.00
+    lou: count=2, distinctiveness=2.00
+    regular: count=2, distinctiveness=2.00
+    block: count=2, distinctiveness=2.00
+    walked: count=2, distinctiveness=2.00
+    dosa: count=2, distinctiveness=2.00
+    hut: count=2, distinctiveness=2.00
+
+HYBRID - RESTAURANT - Prediction Distribution:
+  positive: 564 (67.0%)
+  negative: 161 (19.1%)
+  neutral: 117 (13.9%)
+
+HYBRID - RESTAURANT - Top 10 Aspects:
+  general: 572 instances, dominant sentiment: total
+  food: 148 instances, dominant sentiment: total
+  service: 78 instances, dominant sentiment: total
+  menu: 30 instances, dominant sentiment: total
+  price: 11 instances, dominant sentiment: total
+  ambience: 3 instances, dominant sentiment: positive
+
+HYBRID - RESTAURANT - Sentence Length by Sentiment:
++----------+--------+----------+-----------+
+|          |   Mean |   Median |   Std Dev |
++==========+========+==========+===========+
+| negative |   81.9 |       74 |      45.6 |
++----------+--------+----------+-----------+
+| neutral  |   77.2 |       72 |      35.5 |
++----------+--------+----------+-----------+
+| positive |   74.2 |       65 |      39.3 |
++----------+--------+----------+-----------+
+
+HYBRID - RESTAURANT - Distinctive Words by Sentiment:
+
+  POSITIVE:
+    excellent: count=33, distinctiveness=33.00
+    delicious: count=25, distinctiveness=25.00
+    great: count=99, distinctiveness=19.80
+    friendly: count=24, distinctiveness=12.00
+    also: count=22, distinctiveness=11.00
+    attentive: count=11, distinctiveness=11.00
+    perfect: count=11, distinctiveness=11.00
+    everything: count=10, distinctiveness=10.00
+    warm: count=10, distinctiveness=10.00
+    dishes: count=10, distinctiveness=10.00
+
+  NEGATIVE:
+    worst: count=7, distinctiveness=7.00
+    horrible: count=5, distinctiveness=5.00
+    awful: count=4, distinctiveness=4.00
+    slow: count=7, distinctiveness=3.50
+    fact: count=3, distinctiveness=3.00
+    high: count=3, distinctiveness=3.00
+    crazy: count=3, distinctiveness=3.00
+    lacking: count=3, distinctiveness=3.00
+    cost: count=3, distinctiveness=3.00
+    meals: count=3, distinctiveness=3.00
+
+  NEUTRAL:
+    opened: count=3, distinctiveness=3.00
+    extra: count=2, distinctiveness=2.00
+    dont: count=2, distinctiveness=2.00
+    lou: count=2, distinctiveness=2.00
+    regular: count=2, distinctiveness=2.00
+    walked: count=2, distinctiveness=2.00
+    dosa: count=2, distinctiveness=2.00
+    hut: count=2, distinctiveness=2.00
+    automatically: count=2, distinctiveness=2.00
+    beans: count=2, distinctiveness=2.00
+
+Analyzing confusion patterns for RESTAURANT domain:
+
+Common disagreement patterns:
+  bert: negative vs hybrid: negative vs lr: negative vs svm: positive: 61 instances
+  bert: positive vs hybrid: positive vs lr: negative vs svm: positive: 56 instances
+  bert: negative vs hybrid: negative vs lr: positive vs svm: positive: 36 instances
+  bert: neutral vs hybrid: neutral vs lr: neutral vs svm: positive: 32 instances
+  bert: neutral vs hybrid: neutral vs lr: positive vs svm: positive: 29 instances
+
+Top aspects with model disagreements:
+  general: 273 instances
+  food: 48 instances
+  service: 19 instances
+  menu: 19 instances
+  price: 3 instances

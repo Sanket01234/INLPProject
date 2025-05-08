@@ -1,0 +1,260 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ABSA Error Analysis - Laptop Domain</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                line-height: 1.6;
+                color: #333;
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f5f5f5;
+            }
+            h1, h2, h3 {
+                color: #2c3e50;
+            }
+            h1 {
+                text-align: center;
+                border-bottom: 2px solid #3498db;
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+            }
+            .section {
+                background-color: white;
+                padding: 20px;
+                margin-bottom: 25px;
+                border-radius: 8px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            .model-tabs {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            .tab {
+                padding: 10px 20px;
+                background-color: #eee;
+                cursor: pointer;
+                margin: 0 5px;
+                border-radius: 5px 5px 0 0;
+                transition: 0.3s;
+            }
+            .tab:hover {
+                background-color: #ddd;
+            }
+            .tab.active {
+                background-color: #3498db;
+                color: white;
+            }
+            .tab-content {
+                display: none;
+            }
+            .tab-content.active {
+                display: block;
+            }
+            .chart-container {
+                text-align: center;
+                margin: 20px 0;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 4px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                margin-bottom: 15px;
+            }
+            .comparison {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            .comparison-item {
+                flex: 1;
+                min-width: 300px;
+                max-width: 500px;
+            }
+            .footer {
+                text-align: center;
+                margin-top: 30px;
+                font-size: 14px;
+                color: #7f8c8d;
+                border-top: 1px solid #ddd;
+                padding-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Aspect-Based Sentiment Analysis: Error Analysis</h1>
+        
+        <div class="section">
+            <h2>Laptop Domain - Model Performance Comparison</h2>
+            <div class="chart-container">
+                <img src="laptop_model_comparison.png" alt="Model Performance Comparison">
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Model Analysis</h2>
+            
+            <div class="model-tabs">
+                <div class="tab" onclick="openTab(event, 'svm')">SVM</div> <div class="tab" onclick="openTab(event, 'lr')">LR</div> <div class="tab" onclick="openTab(event, 'bert')">BERT</div> <div class="tab" onclick="openTab(event, 'hybrid')">HYBRID</div>
+            </div>
+            
+            
+            <div id="svm" class="tab-content">
+                <h3>SVM Analysis</h3>
+                
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>Sentiment Distribution</h4>
+                        <img src="laptop_svm_sentiment_distribution.png" alt="SVM Sentiment Distribution">
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Top Aspects</h4>
+                        <img src="laptop_svm_top_aspects.png" alt="SVM Top Aspects">
+                    </div>
+                </div>
+                
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>Sentence Length Analysis</h4>
+                        <img src="laptop_svm_sentence_length.png" alt="SVM Sentence Length">
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Distinctive Words</h4>
+                        <img src="laptop_svm_positive_wordcloud.png" alt="SVM Positive Words">
+                        <img src="laptop_svm_negative_wordcloud.png" alt="SVM Negative Words">
+                        <img src="laptop_svm_neutral_wordcloud.png" alt="SVM Neutral Words">
+                    </div>
+                </div>
+            </div>
+             
+            <div id="lr" class="tab-content">
+                <h3>LR Analysis</h3>
+                
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>Sentiment Distribution</h4>
+                        <img src="laptop_lr_sentiment_distribution.png" alt="LR Sentiment Distribution">
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Top Aspects</h4>
+                        <img src="laptop_lr_top_aspects.png" alt="LR Top Aspects">
+                    </div>
+                </div>
+                
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>Sentence Length Analysis</h4>
+                        <img src="laptop_lr_sentence_length.png" alt="LR Sentence Length">
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Distinctive Words</h4>
+                        <img src="laptop_lr_positive_wordcloud.png" alt="LR Positive Words">
+                        <img src="laptop_lr_negative_wordcloud.png" alt="LR Negative Words">
+                        <img src="laptop_lr_neutral_wordcloud.png" alt="LR Neutral Words">
+                    </div>
+                </div>
+            </div>
+             
+            <div id="bert" class="tab-content">
+                <h3>BERT Analysis</h3>
+                
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>Sentiment Distribution</h4>
+                        <img src="laptop_bert_sentiment_distribution.png" alt="BERT Sentiment Distribution">
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Top Aspects</h4>
+                        <img src="laptop_bert_top_aspects.png" alt="BERT Top Aspects">
+                    </div>
+                </div>
+                
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>Sentence Length Analysis</h4>
+                        <img src="laptop_bert_sentence_length.png" alt="BERT Sentence Length">
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Distinctive Words</h4>
+                        <img src="laptop_bert_positive_wordcloud.png" alt="BERT Positive Words">
+                        <img src="laptop_bert_negative_wordcloud.png" alt="BERT Negative Words">
+                        <img src="laptop_bert_neutral_wordcloud.png" alt="BERT Neutral Words">
+                    </div>
+                </div>
+            </div>
+             
+            <div id="hybrid" class="tab-content">
+                <h3>HYBRID Analysis</h3>
+                
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>Sentiment Distribution</h4>
+                        <img src="laptop_hybrid_sentiment_distribution.png" alt="HYBRID Sentiment Distribution">
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Top Aspects</h4>
+                        <img src="laptop_hybrid_top_aspects.png" alt="HYBRID Top Aspects">
+                    </div>
+                </div>
+                
+                <div class="comparison">
+                    <div class="comparison-item">
+                        <h4>Sentence Length Analysis</h4>
+                        <img src="laptop_hybrid_sentence_length.png" alt="HYBRID Sentence Length">
+                    </div>
+                    <div class="comparison-item">
+                        <h4>Distinctive Words</h4>
+                        <img src="laptop_hybrid_positive_wordcloud.png" alt="HYBRID Positive Words">
+                        <img src="laptop_hybrid_negative_wordcloud.png" alt="HYBRID Negative Words">
+                        <img src="laptop_hybrid_neutral_wordcloud.png" alt="HYBRID Neutral Words">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="section">
+            <h2>Model Disagreement Analysis</h2>
+            <div class="chart-container">
+                <img src="laptop_disagreement_heatmap.png" alt="Model Disagreement Heatmap">
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>ABSA Error Analysis Report - Generated 2025-05-08</p>
+        </div>
+           <script>
+            function openTab(evt, modelName) {  // FIXED: Removed extra comma
+                var i, tabcontent, tablinks;
+                
+                // Hide all tab content
+                tabcontent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                
+                // Remove active class from all tabs
+                tablinks = document.getElementsByClassName("tab");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                
+                // Show the current tab and add active class
+                document.getElementById(modelName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            
+            // Open the first tab by default
+            document.getElementsByClassName("tab")[0].click();
+        </script>
+    </body>
+    </html>
+    

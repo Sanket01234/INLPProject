@@ -1,0 +1,32 @@
+ERROR ANALYSIS REPORT FOR A DOMAIN
+======================================================================
+
+====================================================================================================
+[36m                              MODEL PERFORMANCE COMPARISON - A DOMAIN                               [0m
+====================================================================================================
+[33mCould not load metrics for svm model: [Errno 2] No such file or directory: 'outputs/traditional/a_svm_metrics.json'[0m
+[33mCould not load metrics for lr model: [Errno 2] No such file or directory: 'outputs/traditional/a_lr_metrics.json'[0m
+[33mCould not load metrics for bert model: [Errno 2] No such file or directory: 'outputs/bert/a/best_metrics.json'[0m
+[33mCould not load metrics for hybrid model: [Errno 2] No such file or directory: 'outputs/hybrid/a/best_metrics.json'[0m
+[33mNo metrics data available for comparison[0m
+[33mPredictions file for svm model on a domain not found[0m
+[33mPredictions file for svm model on a domain not found[0m
+[33mPredictions file for svm model on a domain not found[0m
+[33mPredictions file for svm model on a domain not found[0m
+[33mPredictions file for lr model on a domain not found[0m
+[33mPredictions file for lr model on a domain not found[0m
+[33mPredictions file for lr model on a domain not found[0m
+[33mPredictions file for lr model on a domain not found[0m
+[33mPredictions file for bert model on a domain not found[0m
+[33mPredictions file for bert model on a domain not found[0m
+[33mPredictions file for bert model on a domain not found[0m
+[33mPredictions file for bert model on a domain not found[0m
+[33mPredictions file for hybrid model on a domain not found[0m
+[33mPredictions file for hybrid model on a domain not found[0m
+[33mPredictions file for hybrid model on a domain not found[0m
+[33mPredictions file for hybrid model on a domain not found[0m
+[33mPredictions file for svm model on a domain not found[0m
+[33mPredictions file for lr model on a domain not found[0m
+[33mPredictions file for bert model on a domain not found[0m
+[33mPredictions file for hybrid model on a domain not found[0m
+[33mNeed at least two models for comparison[0m
