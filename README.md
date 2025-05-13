@@ -37,7 +37,8 @@ absa_project/
 │
 ├─ preprocessing/
 │  ├─ preprocess.py         # Build train/val/test splits
-│  └─ preprocesstest.py     # For unseen test sets
+│  ├─ preprocesstest.py     # For unseen test sets
+│  └─ bert_preprocess.py    # BERT-specific preprocessing
 │
 ├─ models/
 │  ├─ traditional/
